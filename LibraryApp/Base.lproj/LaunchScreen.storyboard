@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DMd-Zl-ZIO">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="j1G-DN-akE">
+            <objects>
+                <viewController id="DMd-Zl-ZIO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Suo-qG-fHx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="oLt-gm-ATj">
+                                <rect key="frame" x="142" y="376" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book.png" translatesAutoresizingMaskIntoConstraints="NO" id="dn3-66-NeL">
+                                <rect key="frame" x="97" y="177" width="126" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="BMt-gQ-1c7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9710403085" green="0.78897351029999996" blue="0.30648192759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dn3-66-NeL" firstAttribute="top" secondItem="U7r-zb-ilD" secondAttribute="top" constant="157" id="5Fz-rA-Bb4"/>
+                            <constraint firstItem="dn3-66-NeL" firstAttribute="centerX" secondItem="Suo-qG-fHx" secondAttribute="centerX" id="CeT-Kj-QfC"/>
+                            <constraint firstItem="dn3-66-NeL" firstAttribute="centerX" secondItem="oLt-gm-ATj" secondAttribute="centerX" id="noI-42-iqI"/>
+                            <constraint firstItem="U7r-zb-ilD" firstAttribute="bottom" secondItem="oLt-gm-ATj" secondAttribute="bottom" constant="155" id="tID-YK-o9t"/>
+                            <constraint firstItem="dn3-66-NeL" firstAttribute="leading" secondItem="U7r-zb-ilD" secondAttribute="leading" constant="97" id="xlc-cJ-W9c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U7r-zb-ilD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6D-vX-BmQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.25" y="69.718309859154928"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.png" width="512" height="512"/>
+    </resources>
+</document>
